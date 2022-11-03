@@ -30,6 +30,7 @@
     - /var/lib/kubelet
     - "{{ systemd_dest }}/k0scontroller.service"
     - "{{ systemd_dest }}/k0sworker.service"
+    - /run/k0s/status.sock
 
 - name: daemon_reload
   systemd:
